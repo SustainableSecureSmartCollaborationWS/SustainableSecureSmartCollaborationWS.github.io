@@ -78,10 +78,7 @@ footer:
       url: "https://twitter.com/notGDC"
     - label: "Facebook"
       icon: "facebook"
-      url: ""
-    - label: "Linkedin"
-      icon: "linkedin"
-      url: ""
+      url: "https://www.google.com/"
 
 # Collections
 collections:
