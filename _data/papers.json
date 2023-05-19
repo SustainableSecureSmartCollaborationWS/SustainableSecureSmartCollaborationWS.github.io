@@ -1,0 +1,42 @@
+[{
+		"name": "Immersive systems",
+		"people": [
+			"Metaverse",
+			"Virtual reality",
+			"Extended reality"
+		]
+	},
+	{
+		"name": "Data",
+		"people": [
+			"Co-creation, manipulation, and exploitation",
+			"Linked Data and Knowledge Graphs",
+			"Open Data"
+		]
+	},
+	{
+		"name": "Interactive Artificial Intelligence (AI)",
+		"people": [
+			"Speech recognition",
+			"Large Language Model",
+			"ChatBot",
+			"Virtual assistant"
+		]
+	},
+	{
+		"name": "Security awareness",
+		"people": [
+			"Cyber-security",
+			"Information Security",
+			"Fake news detection"
+		]
+	},
+	{
+		"name": "Smart environments design",
+		"people": [
+			"Smart cities",
+			"Smart objects",
+			"Autonomous driving"
+		]
+	}
+]

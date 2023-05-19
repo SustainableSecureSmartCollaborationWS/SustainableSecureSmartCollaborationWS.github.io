@@ -1,140 +1,43 @@
-title: "Sustainable, Secure, and Smart Collaboration Workshop"
+title: S³C
+big_title: Sustainable, Secure, and Smart Collaboration Workshop
 email: mapellegrino@unisa.it
+date: 20<sup>th</sup> September, 2023
+date1: 23<sup>th</sup> June 2023
+date2: 14<sup>th</sup> July 2023
+date3: 19<sup>th</sup> July 2023
+date4: 31<sup>th</sup> July 2023
+address: University of Turin, Turin, Italy
 description: >-
-  The Sustainable, Secure, and Smart Collaboration (S3C) workshop is meant to connect researchers, industries, educators, and technologists involved in different and diverse areas connected to HCI blended with immersive systems, smart cities, and security awareness which can take advantage of the collaboration.
-baseurl: ""
-url: "https://notgdc.io"
-twitter:
-  username: notgdc
-mastodon:
-  username: "@notgdc@mastodon.gamedev.place"
+    The Sustainable, Secure, and Smart Collaboration (S³C) workshop is meant to connect researchers, 
+    industries, educators, and technologists involved in different and diverse areas connected to HCI 
+    blended with immersive systems, smart cities, and security awareness which can take advantage of 
+    the collaboration.
+about_s3c: >-
+    We live in a world where no individual is independent of those around them. Hence, interconnection, 
+    interdependence and collaboration are shaping the framework of modern society as they stimulate the
+    transition to a more sustainable society. It is how we collaborate today that will strengthen our 
+    relationships in the future. By promoting a collaborative environment, you are driving and enabling
+    sustainable practices allowing merging different perspectives to help guide decisions, increasing 
+    trust, promoting an innovative culture and driving innovation. 
+    <br />
+    Collaboration is generally based on interactions between people. However, technology is rapidly 
+    shaping our lives, requiring us to redefine collaborative environments, letting geographically 
+    distant people to easily communicate and work together, experiencing immersive virtual reality 
+    which emulates real social interactions, and designing interactive and smart environments. Hence, 
+    this workshop focuses on sustainable and smart collaboration, which might also take place in 
+    virtual, remote and online settings.
+    <br />
+    While it represents a step forward in breaking down geographical and social barriers, 
+    virtual environments should carefully deal with security aspects, above all when young and 
+    inexperienced users are involved. Hence, besides focusing on sustainable and smart collaboration, 
+    we should not forgive the security concerns.
 
-# Site Settings
-locale: "en"
-repository: "benui-dev/notgdc-site"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username: jekyll
 
-# Open Graph/Twitter default site image
-social:
-  type: Organization
-og_image: "/assets/site-logo.png"
-
-# Reading Files
-include:
-  - .htaccess
-  - _pages
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - node_modules
-  - package.json
-  - package-lock.json
-  - Rakefile
-  - README
-  - README.md
-  - tmp
-  - raw
-  - "*.bat"
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-
-
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: ["apos","apos","quot","quot"]
-  enable_coderay: false
-
-footer:
-  links:
-    - label: "Twitter"
-      icon: "twitter"
-      url: "https://twitter.com/notGDC"
-    - label: "Mastodon"
-      icon: "mastodon"
-      url: "https://mastodon.gamedev.place/@notGDC"
-    - label: "Discord"
-      icon: "discord"
-      url: "https://discord.notgdc.io/"
-    - label: "Twitch"
-      icon: "twitch"
-      url: "https://www.twitch.tv/notGDC"
-
-# Collections
-collections:
-  tags:
-    output: true
-    permalink: /:collection/:path/
-    order:
-     - industries-of-titan.md
-     - vampyr.md
-     - monster-boy.md
-     - nova-111.md
-     - ia-vt.md
-
-
-# Defaults
-defaults:
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: default
-
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-# Plugins (previously gems:)
+# Build settings
+theme: minima
 plugins:
-- jekyll-paginate
-- jekyll-sitemap
-- jekyll-gist
-- jekyll-feed
-- jemoji
-- jekyll-include-cache
-- jekyll-redirect-from
-
-# mimic GitHub Pages with --safe
-whitelist:
-- jekyll-paginate
-- jekyll-sitemap
-- jekyll-gist
-- jekyll-feed
-- jemoji
-- jekyll-include-cache
-- jekyll-redirect-from
-
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
+    - jekyll-feed
