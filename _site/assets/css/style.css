@@ -31,17 +31,20 @@ Version      : 1.0
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700|Rubik:400,600,700');
 
 body {
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 400;
 	line-height: 26px;
 	font-family: 'Rubik', sans-serif;
 	color: #788487;
 	position: relative;
 }
+nav {
+	font-size: 25px;
+}
 
 p {
 	line-height: 28px;
-	font-size: 15px;
+	font-size: 22px;
 }
 
 html {
@@ -209,6 +212,13 @@ h5.subtitle {
 }
 
 
+.my-logo {
+	width: 95px;
+	height: 95px;
+	margin: 0 auto;
+	display: block;
+}
+
 
 
 /*---------- BUTTONS ----------*/
@@ -223,7 +233,7 @@ h5.subtitle {
 	transition: all .2s;
 	border-radius: 0px;
 	font-weight: 600;
-	font-size: 13px;
+	font-size: 20px;
 	letter-spacing: 1px;
 }
 
@@ -602,6 +612,7 @@ h5.subtitle {
 	padding: 3px 8px;
 	margin-bottom: 20px;
 	text-transform: uppercase;
+	font-size: 25px;
 }
 
 .subtitle {
@@ -611,7 +622,7 @@ h5.subtitle {
 .banner-content p {
 	margin: 20px 0px;
 	color: #eee;
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 30px;
 }
 
@@ -1258,6 +1269,34 @@ input[type=email] {
 .footer-widget a {
 	color: #999;
 }
+
+ul.social {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+  }
+  
+  ul.social > li {
+	display: inline-block;
+  }
+  
+  ul.social > li > a {
+	display: inline-block;
+	font-size: 18px;
+	line-height: 30px;
+	width: 30px;
+	height: 30px;
+	border-radius: 36px;
+	background-color: #222222;
+	color: #fff;
+	margin: 0 3px 3px 0;
+  }
+  
+  ul.social > li > a:hover {
+	text-decoration: none;
+	background-color: #ee7c22;
+  }
 
 
 /* =======================================
