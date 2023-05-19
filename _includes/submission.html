@@ -1,0 +1,50 @@
+<div class="ngdc-row submission-entry entry {% for tag in submission.tags %} tag-{{tag}} {% endfor %} tag-year-{{submission.year}}">
+    <div class="ngdc-col-16p tags-column">
+        {%- for tag in include.submission.tags -%}
+            <a class="tag-link" onclick="return filterTags(['{{tag}}']);" href="#submissions"><span class="inline-tag filter-item" value="{{tag}}"
+				{%- if site.data.tags[tag].background-color or site.data.tags[tag].text-color -%}
+                style="
+				{%- if site.data.tags[tag].background-color != "" -%}
+				background-color:{{ site.data.tags[tag].background-color }};
+				{%- endif -%}
+				{%- if site.data.tags[tag].text-color -%}
+			   	color:{{ site.data.tags[tag].text-color }};
+				{%- endif -%}
+				"
+				{%- endif -%}
+				>
+				{%- if site.data.tags[tag].icon -%}
+					{{ site.data.tags[tag].icon }}
+				{%- endif -%}
+				{{ site.data.tags[tag].title }}</span></a>
+            {%- endfor -%}
+        </div>
+        <div class="ngdc-col-83p">
+			{% if include.submission.links.size > 1 %}
+				<h4>{{ include.submission.title }}
+					{% for link in include.submission.links %}
+					<a href="{{ link }}">(Part {{ forloop.index }} {%- include icon.html icon="up-right-from-square" class="fa-third-x text-muted external-link-icon"-%})</a> 
+					{% endfor %}
+				</h4>
+			{% else %}
+				<h4><a class="portfolio-item" href="{{ include.submission.links }}">{{ include.submission.title }} {%- include icon.html icon="up-right-from-square"  class="fa-third-x text-muted external-link-icon"-%}</a></h4>
+			{% endif %}
+        <p> by 
+		{% for author in include.submission.authors %}
+			{%- if author.link -%}
+			  <a href="{{ author.link }}">{{ author.name }} {%- include icon.html icon="up-right-from-square" class="fa-third-x text-muted external-link-icon"-%}</a>
+			{%- else -%}
+			  {{ author.name }}
+			{%- endif -%}
+			{%- if include.submission.authors.size > 1 -%}
+				{%- if forloop.index < include.submission.authors.size -%}
+					,
+				 {% endif %}
+			{%- endif -%}
+		{%- endfor -%}
+		{%- if include.submission.year -%}
+		<span class="year">({{ include.submission.year }})</span>
+		{%- endif -%}
+		</p>
+    </div>
+</div>

@@ -1,0 +1,140 @@
+title: "#notGDC"
+email: notgdc@notgdc.io
+description: >-
+  A game development non-conference, for everyone!
+baseurl: ""
+url: "https://notgdc.io"
+twitter:
+  username: notgdc
+mastodon:
+  username: "@notgdc@mastodon.gamedev.place"
+
+# Site Settings
+locale: "en"
+repository: "benui-dev/notgdc-site"
+
+# Open Graph/Twitter default site image
+social:
+  type: Organization
+og_image: "/assets/site-logo.png"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - README.md
+  - tmp
+  - raw
+  - "*.bat"
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: ["apos","apos","quot","quot"]
+  enable_coderay: false
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "twitter"
+      url: "https://twitter.com/notGDC"
+    - label: "Mastodon"
+      icon: "mastodon"
+      url: "https://mastodon.gamedev.place/@notGDC"
+    - label: "Discord"
+      icon: "discord"
+      url: "https://discord.notgdc.io/"
+    - label: "Twitch"
+      icon: "twitch"
+      url: "https://www.twitch.tv/notGDC"
+
+# Collections
+collections:
+  tags:
+    output: true
+    permalink: /:collection/:path/
+    order:
+     - industries-of-titan.md
+     - vampyr.md
+     - monster-boy.md
+     - nova-111.md
+     - ia-vt.md
+
+
+# Defaults
+defaults:
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: default
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+# Plugins (previously gems:)
+plugins:
+- jekyll-paginate
+- jekyll-sitemap
+- jekyll-gist
+- jekyll-feed
+- jemoji
+- jekyll-include-cache
+- jekyll-redirect-from
+
+# mimic GitHub Pages with --safe
+whitelist:
+- jekyll-paginate
+- jekyll-sitemap
+- jekyll-gist
+- jekyll-feed
+- jemoji
+- jekyll-include-cache
+- jekyll-redirect-from
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
