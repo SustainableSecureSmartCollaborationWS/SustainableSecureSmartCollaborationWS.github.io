@@ -597,7 +597,7 @@ h5.subtitle {
 
 .banner-content .subtitle {
 	color: #fff;
-	background: #635CDB;
+	background: #ca2a90;
 	display: inline-block;
 	padding: 3px 8px;
 	margin-bottom: 20px;
@@ -735,7 +735,7 @@ h5.subtitle {
 	position: absolute;
 	right: 0px;
 	content: "";
-	background: url("../img/about/about-1.jpg") 50% 50% no-repeat;
+	background: url("../img/about/about.jpg") 100% 100% no-repeat;
 	background-size: cover;
 	width: 40%;
 	height: 100%;
@@ -1035,7 +1035,7 @@ h5.subtitle {
 	font-weight: 700;
 	line-height: 70px;
 	margin: 10px 0px;
-	color: #635CDB;
+	color: #bcbec0;
 }
 
 .counter-stat i {
@@ -1058,12 +1058,12 @@ h5.subtitle {
 
 
 #counter .dark-overlay {
-	background: #000;
+	background: #ca2a90;
 	opacity: 0.95;
 }
 
 #counter .pink-overlay {
-	background: #b3ffb3;
+	background: #ca2a90;
 	opacity: 1;
 }
 
