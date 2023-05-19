@@ -1,13 +1,13 @@
 title: "Sustainable, Secure, and Smart Collaboration Workshop"
 email: mapellegrino@unisa.it
 description: >-
-  The Sustainable, Secure, and Smart Collaboration (S^3C) workshop.
-baseurl: "https://sustainablesecuresmartcollaborationws.github.io/"
-url: "https://sustainablesecuresmartcollaborationws.github.io/"
+  The Sustainable, Secure, and Smart Collaboration (S3C) workshop is meant to connect researchers, industries, educators, and technologists involved in different and diverse areas connected to HCI blended with immersive systems, smart cities, and security awareness which can take advantage of the collaboration
+baseurl: ""
+url: "https://notgdc.io"
 twitter:
   username: notgdc
-facebook:
-  username: notgdc
+mastodon:
+  username: "@notgdc@mastodon.gamedev.place"
 
 # Site Settings
 locale: "en"
@@ -77,6 +77,15 @@ footer:
     - label: "Twitter"
       icon: "twitter"
       url: "https://twitter.com/notGDC"
+    - label: "Mastodon"
+      icon: "mastodon"
+      url: "https://mastodon.gamedev.place/@notGDC"
+    - label: "Discord"
+      icon: "discord"
+      url: "https://discord.notgdc.io/"
+    - label: "Twitch"
+      icon: "twitch"
+      url: "https://www.twitch.tv/notGDC"
 
 # Collections
 collections:
