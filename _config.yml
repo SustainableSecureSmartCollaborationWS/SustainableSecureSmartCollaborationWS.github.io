@@ -7,6 +7,8 @@ baseurl: "https://sustainablesecuresmartcollaborationws.github.io/"
 url: "https://sustainablesecuresmartcollaborationws.github.io/"
 twitter:
   username: notgdc
+facebook:
+  username: notgdc
 
 # Site Settings
 locale: "en"
@@ -76,9 +78,6 @@ footer:
     - label: "Twitter"
       icon: "twitter"
       url: "https://twitter.com/notGDC"
-    - label: "Facebook"
-      icon: "facebook"
-      url: "https://www.google.com/"
 
 # Collections
 collections:
